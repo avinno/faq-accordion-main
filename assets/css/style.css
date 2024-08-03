@@ -30,16 +30,22 @@ body {
 	padding: 0 1rem;
 	margin: 0;
 	width: 100%;
+	background-image: url("../images/background-pattern-desktop.svg");
+	background-position-y: top;
+	background-position-x: center;
+	background-repeat: no-repeat;
 }
 
 h1 {
 	display: flex;
 	align-items: center;
-	font-size: 38px;
+	font-size: 3rem;
+	font-weight: var(--font-bold);
+	color: var(--dark-purple);
 }
 
 h1 svg {
-	margin-right: 1rem;
+	margin-right: 1.5rem;
 }
 
 p {
@@ -52,8 +58,8 @@ a {
 
 main {
 	width: 100%;
-    max-width: calc(600px + 4rem);
-    padding: 2rem;
+    max-width: calc(600px + 5rem);
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -70,6 +76,9 @@ main {
 
 .details-wrapper {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 details summary {
@@ -88,16 +97,48 @@ details[open] .svg-icon-minus {
   display: flex;
 }
 
+details[open] summary {
+  border-bottom: 0;
+}
+
+.info {
+	color: var(--grayish-purple);
+}
+
+details[open] .info {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+details[open]:last-of-type .info {
+	border-bottom: 0;
+}
+
 summary {
 	cursor: pointer;
-	font-weight: var(--font-bold);
+	font-weight: var(--font-semibold);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1rem;
+	border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+	color: var(--dark-purple);
+    gap: 1rem;
 }
 
+summary svg {
+	width: 30px;
+	height: 31px;
+}
+
+details:nth-of-type(4) summary {
+	border-bottom: 0;
+
 details div {
+	padding: 1rem 0;
+}
+
+summary div {
 	padding: 1rem 0;
 }
 
