@@ -27,7 +27,7 @@ body {
 	gap: 2rem;
 	background-color: var(--light-pink);
 	position: relative;
-	padding: 0 1rem;
+	padding: 0 1.5rem;
 	margin: 0;
 	width: 100%;
 	background-image: url("../images/background-pattern-desktop.svg");
@@ -129,7 +129,7 @@ summary {
 }
 
 summary svg {
-	width: 30px;
+	min-width: 30px;
 	height: 31px;
 }
 
@@ -150,5 +150,15 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 2rem;
+	padding-bottom: 4rem;
+}
+
+@media (max-width: 375px) {
+  body {
+	  background-image: url("../images/background-pattern-mobile.svg");
+  }
+  
+  main {
+	  margin-top: 8rem;
+  }
 }
