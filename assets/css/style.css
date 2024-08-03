@@ -39,7 +39,7 @@ body {
 h1 {
 	display: flex;
 	align-items: center;
-	font-size: 3rem;
+	font-size: 3.75rem;
 	font-weight: var(--font-bold);
 	color: var(--dark-purple);
 }
@@ -58,14 +58,14 @@ a {
 
 main {
 	width: 100%;
-    max-width: calc(600px + 5rem);
+    max-width: calc(600px + 2.5rem);
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     background-color: var(--white);
     border-radius: 1rem;
-    margin: 19rem 0 0 0;
+    margin: 16.75rem 0 0 0;
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -121,9 +121,11 @@ summary {
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid #eee;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 	color: var(--dark-purple);
     gap: 1rem;
+	line-height: 1.5rem;
+	font-size: 1.22rem;
 }
 
 summary svg {
@@ -133,26 +135,20 @@ summary svg {
 
 details:nth-of-type(4) summary {
 	border-bottom: 0;
+}
 
 details div {
-	padding: 1rem 0;
+	padding-bottom: 1rem;
 }
 
 summary div {
 	padding: 1rem 0;
 }
 
-footer p {
-	text-align: center;
-}
-
-.bg-pattern-desktop {
-	background-image: url("../images/background-pattern-desktop.svg");
-	background-position-y: top;
-	background-position-x: center;
-	background-repeat: no-repeat;
-}
-
-.bg-pattern-mobile {
-	display: none;
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 2rem;
 }
